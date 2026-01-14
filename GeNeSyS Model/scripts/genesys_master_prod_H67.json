@@ -1,0 +1,38 @@
+{
+  "model": "GeNeSyS",
+  "version": "v10.5-prod",
+  "run_mode": "background",
+  "data_dir": "data",
+
+  "data_files": {
+    "sn_dat": "Pantheon+SH0ES.dat",
+    "sn_cov": "symmetrized_cov_matrix.cov",
+    "bao_summary": "DR12_fid_DMrd_DHrd_summary.csv",
+    "bao_cov": "DR12_cov6x6_DMrd_DHrd_from_consensus.csv"
+  },
+
+  "compare_lcdm": true,
+
+  "fixed_parameters": {
+    "H0": 67.0,
+
+    "Omega_b": 0.0582,
+    "Omega_c": 0.266,
+    "Omega_r": 1.07e-04,
+
+    "tau_fast": 0.7,
+    "f_fast": 0.2,
+    "x_BBN": -17.0,
+    "width_BBN": 0.5
+  },
+
+  "x_c_list": [-9.4, -9.2, -9.0, -8.8, -8.6, -8.4, -8.2, -8.0],
+  "sigma_c_list": [0.12, 0.16, 0.20, 0.22, 0.24, 0.26],
+  "tau_slow_list": [5.6, 6.0, 6.4, 6.8],
+  "alpha_M_list": [0.0005, 0.001, 0.0015, 0.002, 0.003, 0.004],
+
+  "scan_out": "_GeNeSyS_v10_5_H67_background_scan.csv",
+  "params_out": "_GeNeSyS_v10_5_H67_best_fit_params.json",
+  "ez_out": "_GeNeSyS_v10_5_H67_best_Ez.csv",
+  "verdict_out": "_GeNeSyS_v10_5_H67_full_cov_verdict.json"
+}
