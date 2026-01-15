@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "script_version": "1.1.6-prod",
+    "timestamp": "2026-01-10T11:07:53",
+    "status": "FULL_SUCCESS",
+    "warnings": [],
+    "Ez_file": "_GeNeSyS_v10_5_best_Ez.csv",
+    "Ez_file_sha256": "4689aaf6f656455be46d8b51518c854a48c3da6f84d83522825dc72e6a0421ae",
+    "params_file": "_GeNeSyS_v10_5_best_fit_params.json",
+    "params_file_sha256": "bde23082e6b099239ab564fa7a91c265ee564fd2edb19c85520127ea64e3a44c",
+    "H0_used_km_s_Mpc": 73.0,
+    "H0_source": "_GeNeSyS_v10_5_best_fit_params.json",
+    "data_dir": "data",
+    "data_files_used": {
+      "Pantheon+SH0ES.dat": "Pantheon+SH0ES.dat",
+      "symmetrized_cov_matrix.cov": "symmetrized_cov_matrix.cov",
+      "DR12_fid_DMrd_DHrd_summary.csv": "DR12_fid_DMrd_DHrd_summary.csv",
+      "DR12_cov6x6_DMrd_DHrd_from_consensus.csv": "DR12_cov6x6_DMrd_DHrd_from_consensus.csv"
+    },
+    "comparison_note": "LCDM comparison at fixed H0=GeNeSyS"
+  },
+  "SN": {
+    "status": "SUCCESS",
+    "mode": "FULL_COV_CHOLESKY",
+    "N": 1701,
+    "Ndof_SN": 1700,
+    "chi2_GeNeSyS": 1753.494849611915,
+    "Mbest_GeNeSyS": -19.255059650446732,
+    "chi2_LCDM": 1758.9931773517192,
+    "Mbest_LCDM": -19.262882258297743
+  },
+  "BAO": {
+    "status": "SUCCESS",
+    "rd_treatment": "analytic_nuisance",
+    "Nvec": 6,
+    "Ndof_BAO": 5,
+    "chi2_GeNeSyS": 2.3263256924978384,
+    "rd_best_GeNeSyS_Mpc": 136.28030341312706,
+    "chi2_LCDM": 2.4290444563642635,
+    "rd_best_LCDM_Mpc": 137.4903513389983
+  },
+  "TOTAL": {
+    "status": "SUCCESS",
+    "chi2_GeNeSyS": 1755.821175304413,
+    "Ndof_total": 1705
+  }
+}
