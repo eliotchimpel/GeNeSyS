@@ -1,0 +1,16 @@
+{
+  "eb_level": "EB04",
+  "tag": "H70_final",
+  "sha256": {
+    "inputs": {
+      "outputs_H70/geom_output_v10_6_H70_xm2_0_final.npz": "8b864b8c13a87b41ae86eb08c1b45b32cbd8c8ddc5b6ddfc9e6c5285f99977eb",
+      "outputs_H70/eb3_output_v10_6_H70_xm2_0_final.npz": "5ad5f4e7416136604a210ea4cc31ab4adce42403f103dd3791deb638760233b8"
+    },
+    "outputs": {
+      "outputs_H70/eb04_analysis/eb04_summary_H70_final.json": "0afe7b4eb15618f95f7b7f15755b401c68206bcb4c356e3dce0bb50659d658ce",
+      "outputs_H70/eb04_analysis/eb04_DA_vs_z_H70_final.png": "77a4132cf9da6c794bc0cc9b87f65be4dbfb16259f93eb6db9b2c93c5ea6adfe",
+      "outputs_H70/eb04_analysis/eb04_theta_star_H70_final.png": "9f87d1a282e1f571e26a634bf71e825262df5b890f12237a5f01bd1085420538",
+      "outputs_H70/eb04_analysis/eb04_lensing_kernel_proxy_H70_final.png": "9675baa245ee88fb787466463db2bae0e200066ef3dcd6629b0086369d77c0f4"
+    }
+  }
+}

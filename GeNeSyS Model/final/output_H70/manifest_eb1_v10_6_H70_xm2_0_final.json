@@ -1,0 +1,32 @@
+{
+  "stage": "EB1",
+  "timestamp_unix": 1769627259,
+  "status": "SUCCESS",
+  "script_version": "v10.6",
+  "inputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/geom_output_v10_6_H70_xm2_0_final.npz",
+    "eb_params_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/data/eb01_from_pipeline_H70.json",
+    "integrator": "rk4",
+    "rk4_geom": "interp",
+    "eb_x_policy": "interp",
+    "n_fields": null,
+    "U0": 0.0,
+    "Up0": 0.0,
+    "maxabs_stop": 1e+100,
+    "stop_on_nonfinite": true
+  },
+  "outputs": {
+    "aux_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/aux_output_v10_6_H70_xm2_0_final.npz"
+  },
+  "gamma_semantics": "profile_from_input_json (not fixed internally)",
+  "sha256": {
+    "geom_npz": "8b864b8c13a87b41ae86eb08c1b45b32cbd8c8ddc5b6ddfc9e6c5285f99977eb",
+    "eb_params_json": "38f61f188c08d6dcc32059a81ded7fe8d28baf6d5781b6c8685c85ab4f5b5142",
+    "aux_npz": "995674237088ac9c660f0e7ee0a69da7731b0c42f9046e7432636e367ec892f4"
+  },
+  "geometry": {
+    "n": 4001,
+    "x_min": -2.0,
+    "x_max": 0.0
+  }
+}

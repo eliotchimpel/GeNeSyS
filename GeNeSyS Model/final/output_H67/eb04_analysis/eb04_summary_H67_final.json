@@ -1,0 +1,101 @@
+{
+  "eb_level": "EB04",
+  "scope": "CMB post-projection (geometry + optional late-time potentials) strictly from EB03 outputs; no primordial generation.",
+  "inputs": {
+    "geom_npz": "outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz",
+    "aux_npz": null,
+    "eb3_npz": "outputs_H67/eb3_output_v10_6_H67_xm2_0_final.npz"
+  },
+  "unit_declarations": {
+    "eta_unit": "H0inv",
+    "H0_kmsMpc": 67.0
+  },
+  "z_star": 1090.0,
+  "distance": {
+    "eta0": 8488.85885229243,
+    "eta_at_zstar": 0.0,
+    "chi_zstar_eta_units": 8488.85885229243,
+    "D_A_zstar_eta_units": 7.780805547472437,
+    "chi_zstar_Mpc": {
+      "status": "OK",
+      "value_Mpc": 37983520.31259412,
+      "assumption": "eta in H0^{-1} units"
+    },
+    "D_A_zstar_Mpc": {
+      "status": "OK",
+      "value_Mpc": 34815.3256760716,
+      "assumption": "eta in H0^{-1} units"
+    },
+    "units_note": "Physical conversion is performed ONLY if eta_unit is declared as Mpc or H0inv."
+  },
+  "theta_star": {
+    "status": "OK",
+    "rs_fid_same_units_as_eta": 0.0322783637205443,
+    "theta_star_rad": 0.004148460403438536,
+    "theta_star_deg": 0.2376892725941669,
+    "theta_star_times_100": 0.4148460403438536
+  },
+  "planck_comparison": {
+    "status": "OK",
+    "planck_2018_100_theta_star": 1.04109,
+    "planck_2018_sigma": 0.0003,
+    "genesys_100_theta_star": 0.4148460403438536,
+    "delta": -0.6262439596561464,
+    "n_sigma": 2087.479865520488,
+    "note": "Comparative diagnostic only; does not imply primordial modeling."
+  },
+  "isw_proxy": {
+    "status": "NOT_AVAILABLE",
+    "reason": "No usable potential time series in EB03 outputs."
+  },
+  "lensing_kernel_proxy": {
+    "status": "OK",
+    "chi_star": 8488.85885229243,
+    "W_max": 2122.214713066733,
+    "W_argmax_z": 1.398875293967098,
+    "note": "geometry-only proxy; no growth included"
+  },
+  "automated_verdict": {
+    "theta_star_planck": "FAIL",
+    "isw_proxy": "NOT_AVAILABLE",
+    "lensing_kernel_proxy": "OK"
+  },
+  "data_availability": {
+    "geom_keys": [
+      "E",
+      "H0_km_s_Mpc",
+      "HHp",
+      "Hconf",
+      "R",
+      "a",
+      "eta",
+      "x",
+      "z"
+    ],
+    "eb3_keys": [
+      "Pk_R",
+      "Rk_im",
+      "Rk_re",
+      "Rkp_im",
+      "Rkp_re",
+      "eta",
+      "eta_save",
+      "fail_mask",
+      "ic_mode",
+      "integrator",
+      "k_list",
+      "save_every",
+      "script_version",
+      "start_idx",
+      "substeps",
+      "x_save",
+      "z",
+      "z_ok",
+      "z_source",
+      "zpp_over_z",
+      "zprime_over_z"
+    ],
+    "aux_keys": []
+  },
+  "verdict_logic_note": "EB04 is a compatibility check; absence of strong late-time signatures is not a failure."
+}

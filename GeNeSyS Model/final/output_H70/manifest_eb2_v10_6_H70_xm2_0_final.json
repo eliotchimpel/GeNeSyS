@@ -1,0 +1,25 @@
+{
+  "script": "GeNeSyS_v10_6_EB2.py",
+  "script_version": "v10.6",
+  "stage": "EB2",
+  "timestamp_unix": 1769627448,
+  "status": "SUCCESS",
+  "inputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/geom_output_v10_6_H70_xm2_0_final.npz",
+    "aux_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/aux_output_v10_6_H70_xm2_0_final.npz"
+  },
+  "outputs": {
+    "eb2_out_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/eb2_output_v10_6_H70_xm2_0_final.npz",
+    "eb2_summary_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H70/eb2_summary_v10_6_H70_xm2_0_final.json"
+  },
+  "sha256": {
+    "geom_npz": "8b864b8c13a87b41ae86eb08c1b45b32cbd8c8ddc5b6ddfc9e6c5285f99977eb",
+    "aux_npz": "995674237088ac9c660f0e7ee0a69da7731b0c42f9046e7432636e367ec892f4",
+    "eb2_out_npz": "4cdf42759468f6ee14c41ad1f972796eca67a638f388e3c43d44a36c6cebd687"
+  },
+  "config": {
+    "den_min_abs_phi": 1e-14,
+    "den_min_abs_U": 1e-14
+  },
+  "notes": "EB2 reconstructs gamma from EB01 identities; no scanning/tuning."
+}

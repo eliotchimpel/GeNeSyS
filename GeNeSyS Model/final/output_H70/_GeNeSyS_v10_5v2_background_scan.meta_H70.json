@@ -1,0 +1,61 @@
+{
+  "script_version": "v10.5v2-prod",
+  "fixed_parameters": {
+    "H0": 70.0,
+    "Omega_b0": 0.0532,
+    "Omega_C0": 0.266,
+    "Omega_r0_eff": 9.77e-05,
+    "Omega_M0_derived": 0.6807023,
+    "tau_fast": 0.7,
+    "f_fast": 0.2,
+    "xmin": -20.0,
+    "xmax": 0.0,
+    "ngrid": 2001,
+    "n_iter": 15,
+    "x_BBN": -17.0,
+    "width_BBN": 0.5
+  },
+  "scan_grid": {
+    "x_c_list": [
+      -9.4,
+      -9.2,
+      -9.0,
+      -8.8,
+      -8.6,
+      -8.4,
+      -8.2,
+      -8.0
+    ],
+    "sigma_c_list": [
+      0.12,
+      0.16,
+      0.2,
+      0.22,
+      0.24,
+      0.26
+    ],
+    "tau_slow_list": [
+      5.6,
+      6.0,
+      6.4,
+      6.8
+    ],
+    "alpha_M_list": [
+      0.0005,
+      0.001,
+      0.0015,
+      0.002,
+      0.003,
+      0.004
+    ]
+  },
+  "require_mc_zstar": null,
+  "output_csv": "_GeNeSyS_v10_5v2_background_scan.csv",
+  "output_csv_sha256": "a5c0af9cae759cfa916784fd378766d21ff220f2a57ac37cb42ea927497a54a4",
+  "environment": {
+    "python_version": "3.11.0",
+    "numpy_version": "1.24.2+23.gf14cd4457",
+    "pandas_version": "2.0.0rc1+10.geccf9bd802.dirty",
+    "scipy_version": "1.10.2.dev0+2408.7f2ac69"
+  }
+}

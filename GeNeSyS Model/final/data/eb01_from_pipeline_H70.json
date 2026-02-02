@@ -1,0 +1,55 @@
+{
+  "model": "GeNeSyS_EB01",
+  "version": "v10.6",
+
+  "source_pipeline": {
+    "H0_km_s_Mpc": 70.0,
+    "best_Ez": "_GeNeSyS_v10_5v2_best_Ez.csv",
+    "best_fit_params": "_GeNeSyS_v10_5v2_best_fit_params.json",
+    "background_scan_meta": "_GeNeSyS_v10_5v2_background_scan.meta.json",
+    "verdict": "_GeNeSyS_v10_5v2_full_cov_verdict.json"
+  },
+
+  "description": "EB01 auxiliary profiles derived consistently from pipeline H70. No parameter is fixed; gamma is emergent and vanishes in EB01 regime.",
+
+  "profiles": {
+    "x": {
+      "policy": "from_geometry",
+      "description": "x = ln(a) grid taken from EB0 geometry (derived from pipeline H70)"
+    },
+
+    "beta": {
+      "type": "constant",
+      "value": 1.0,
+      "description": "Linear coupling to Ricci scalar R(x). Structure-only, H-independent."
+    },
+
+    "gamma": {
+      "type": "constant",
+      "value": 0.0,
+      "description": "No MM–MC feedback in EB01. Gamma is emergent and vanishes at this order."
+    },
+
+    "m": {
+      "type": "constant",
+      "value": 1.0,
+      "units": "H0",
+      "description": "Neutral mass scale for auxiliary modes. No tuning, no H dependence."
+    }
+  },
+
+  "physics_assumptions": {
+    "regime": "EB01",
+    "linearity": true,
+    "backreaction": false,
+    "gamma_emergent": true,
+    "parameters_fixed": false
+  },
+
+  "continuity": {
+    "EB0": "geometry from pipeline H70",
+    "EB01": "passive auxiliary response",
+    "EB02": "gamma becomes observable",
+    "EB03": "non-linear feedback regime"
+  }
+}

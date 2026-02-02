@@ -1,0 +1,34 @@
+{
+  "stage": "EB0",
+  "timestamp_unix": 1769627145,
+  "status": "SUCCESS",
+  "script_version": "v10.6",
+  "inputs": {
+    "best_ez": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/_GeNeSyS_v10_5v2_best_Ez.csv",
+    "params_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/_GeNeSyS_v10_5v2_best_fit_params.json",
+    "verdict_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/_GeNeSyS_v10_5v2_full_cov_verdict.json",
+    "scan_meta_json": null
+  },
+  "outputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz"
+  },
+  "geometry": {
+    "n": 4001,
+    "x_min": -2.0,
+    "x_max": 0.0,
+    "eta_min": 0.0,
+    "eta_max": 8488.85885229243,
+    "requested": {
+      "n_x": 4001,
+      "x_min": -2.0,
+      "x_max": 0.0
+    },
+    "smooth_window": 5
+  },
+  "sha256": {
+    "geom_npz": "fcb9a3f29bb5562dbc66023cdfc205ef865ce19c328e8ad6844b81a5a5a9c495",
+    "best_ez": "92ec77180fcc5d1b1d937a29845f22df3976fc3e82b27d3c4db3d35db5331d35",
+    "params_json": "84dd0a7a520c275081bbc53ed7ebfdb757c667862b94a6666aa5154e279fc046",
+    "verdict_json": "ab3471a563dbf029e9d21a7e7f3fd4d554d1482b3df4912ac59c6203f7bcf6f1"
+  }
+}

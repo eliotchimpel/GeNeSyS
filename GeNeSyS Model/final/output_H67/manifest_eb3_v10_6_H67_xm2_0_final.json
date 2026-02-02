@@ -1,0 +1,25 @@
+{
+  "script": "GeNeSyS_v10_6_EB3.py",
+  "script_version": "v10.6",
+  "stage": "EB3",
+  "timestamp_unix": 1769627496,
+  "status": "SUCCESS",
+  "inputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz",
+    "aux_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/aux_output_v10_6_H67_xm2_0_final.npz",
+    "eb2_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb2_output_v10_6_H67_xm2_0_final.npz",
+    "perturbations_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/data/genesys_EB3_perturbations.json"
+  },
+  "outputs": {
+    "eb3_out_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb3_output_v10_6_H67_xm2_0_final.npz",
+    "eb3_summary_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb3_summary_v10_6_H67_xm2_0_final.json"
+  },
+  "sha256": {
+    "geom_npz": "fcb9a3f29bb5562dbc66023cdfc205ef865ce19c328e8ad6844b81a5a5a9c495",
+    "aux_npz": "8743f7585ff6cbd4b390f2c60bdf5b5d3c136522476749c91febef2e3be20e90",
+    "perturbations_json": "c7e7db53a9dff6361002be44ef84a3d77ce825288705be7058fbe78d067af412",
+    "eb3_out_npz": "0a469a3524748c15372e6d2b73d49cb05b2c8af541e3ab70b0d55cdc1cd65e98",
+    "eb2_npz": "ef73a9a9f2653c341a47130eac2f452205ed533cce73a164f9c7140836681d1e"
+  },
+  "notes": "EB3 integrates R_k directly (anti-overflow). Pipeline-consistent z is used from geom NPZ when available; recompute is forbidden by default."
+}

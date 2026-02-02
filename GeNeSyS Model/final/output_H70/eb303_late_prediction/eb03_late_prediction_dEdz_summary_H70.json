@@ -1,0 +1,26 @@
+{
+  "tag": "H70",
+  "z_range": [
+    0.0,
+    5.9971295453101865
+  ],
+  "dEdz_genesys": {
+    "min": 0.10695175046353463,
+    "max": 2.244182224967062,
+    "mean": 1.3240190212163396
+  },
+  "comparison_lcdm": {
+    "MAE": 0.05577122229004049,
+    "RMSE": 0.05702276314358144
+  },
+  "z_cleaning": {
+    "n_raw": 4001,
+    "n_unique": 4001,
+    "removed_duplicates": 0
+  },
+  "notes": [
+    "Late-time internal diagnostic only",
+    "No observational calibration",
+    "\u039bCDM curve is reference only"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "H73",
+  "z_range": [
+    0.0,
+    5.9971295453101865
+  ],
+  "dEdz_genesys": {
+    "min": 0.10573853511640208,
+    "max": 2.228970134191286,
+    "mean": 1.3137474290106728
+  },
+  "comparison_lcdm": {
+    "MAE": 0.04550399136427589,
+    "RMSE": 0.04712253938100412
+  },
+  "z_cleaning": {
+    "n_raw": 4001,
+    "n_unique": 4001,
+    "removed_duplicates": 0
+  },
+  "notes": [
+    "Late-time internal diagnostic only",
+    "No observational calibration",
+    "\u039bCDM curve is reference only"
+  ]
+}

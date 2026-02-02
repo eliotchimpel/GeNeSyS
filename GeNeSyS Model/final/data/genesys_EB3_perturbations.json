@@ -1,0 +1,78 @@
+{
+  "model": "GeNeSyS_EB3",
+  "version": "v10.6",
+
+  "description": "EB3 linear scalar perturbations propagated on a fixed GeNeSyS background. This configuration is purely kinematic and diagnostic. No background parameter (gamma, beta, m, H0) is fixed or tuned here.",
+
+  "source": {
+    "geometry": "EB0 output (geom_output NPZ)",
+    "auxiliary_background": "EB1 output (aux_output NPZ)",
+    "gamma_diagnostic": "EB2 output (eb2_output NPZ, optional)"
+  },
+
+  "perturbations": {
+    "type": "scalar",
+    "variable": "comoving_curvature",
+    "symbol": "R_k",
+    "equation": "R'' + 2 (z'/z) R' + k^2 R = 0",
+    "notes": "Mukhanov–Sasaki equation rewritten for the comoving curvature. Initial conditions are imposed on v_k in the Bunch–Davies vacuum and converted analytically to R_k."
+  },
+
+  "k_list": [
+    1e-4,
+    3e-4,
+    1e-3,
+    3e-3,
+    1e-2,
+    3e-2,
+    1e-1,
+    3e-1
+  ],
+
+  "k_units": "conformal_time_inverse",
+  "k_description": "Comoving wavenumbers expressed in the same conformal-time units as eta. No implicit H0 rescaling is assumed in the code.",
+
+  "initial_conditions": {
+    "type": "Bunch-Davies",
+    "imposed_on": "v_k",
+    "conversion": "analytic_to_Rk",
+    "time_policy": "automatic_start",
+    "description": "Vacuum initial conditions imposed as early as possible on v_k. No assumption is made that all modes satisfy k >> aH; modes violating numerical stability are rejected."
+  },
+
+  "integration": {
+    "integrator": "rk4",
+    "substeps": 1,
+    "err_raise": true,
+    "description": "Strict integration policy. Any floating-point anomaly (overflow, invalid, divide-by-zero) aborts the mode to prevent unphysical spectra."
+  },
+
+  "normalization": {
+    "convention": "canonical",
+    "amplitude_fitting": false,
+    "notes": "No amplitude fitting or observational calibration is performed in EB3."
+  },
+
+  "diagnostics": {
+    "compute_power_spectrum": true,
+    "compute_transfer_function": true,
+    "store_mode_functions": true,
+    "reject_unstable_modes": true
+  },
+
+  "physics_assumptions": {
+    "linear_perturbations": true,
+    "backreaction": false,
+    "background_fixed": true,
+    "gamma_not_used_dynamically": true,
+    "gamma_only_diagnostic": true,
+    "no_parameter_fitting": true
+  },
+
+  "continuity": {
+    "EB0": "background geometry from pipeline (E, R, eta)",
+    "EB1": "auxiliary fields evolved passively",
+    "EB2": "gamma reconstructed diagnostically only",
+    "EB3": "linear perturbations propagated without feedback"
+  }
+}

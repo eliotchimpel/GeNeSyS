@@ -1,0 +1,16 @@
+{
+  "eb_level": "EB04",
+  "tag": "H67_final",
+  "sha256": {
+    "inputs": {
+      "outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz": "fcb9a3f29bb5562dbc66023cdfc205ef865ce19c328e8ad6844b81a5a5a9c495",
+      "outputs_H67/eb3_output_v10_6_H67_xm2_0_final.npz": "0a469a3524748c15372e6d2b73d49cb05b2c8af541e3ab70b0d55cdc1cd65e98"
+    },
+    "outputs": {
+      "outputs_H67/eb04_analysis/eb04_summary_H67_final.json": "c60b285ebee2acd972a11d357f60d158a5c45a8f21e8bd93cc211d4ded0b44fb",
+      "outputs_H67/eb04_analysis/eb04_DA_vs_z_H67_final.png": "814b434b2f84008a1825106af60a84ae0604c19554229f3614c66051314ccf90",
+      "outputs_H67/eb04_analysis/eb04_theta_star_H67_final.png": "1ae24e1e2f7d4cc1ca3571a2c615f7a2aebee7845a0dfc3120ae1363d1ecc322",
+      "outputs_H67/eb04_analysis/eb04_lensing_kernel_proxy_H67_final.png": "226317c38ed18e716b8c56f9592654916fe1d2b869178ff670a42193cdca2b0b"
+    }
+  }
+}

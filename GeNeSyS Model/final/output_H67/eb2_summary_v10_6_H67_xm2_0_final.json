@@ -1,0 +1,54 @@
+{
+  "model": "GeNeSyS_EB2",
+  "version": "v10.6",
+  "timestamp_unix": 1769627337,
+  "inputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz",
+    "aux_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/aux_output_v10_6_H67_xm2_0_final.npz"
+  },
+  "outputs": {
+    "eb2_out_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb2_output_v10_6_H67_xm2_0_final.npz"
+  },
+  "sha256": {
+    "geom_npz": "fcb9a3f29bb5562dbc66023cdfc205ef865ce19c328e8ad6844b81a5a5a9c495",
+    "aux_npz": "8743f7585ff6cbd4b390f2c60bdf5b5d3c136522476749c91febef2e3be20e90",
+    "eb2_out_npz": "ef73a9a9f2653c341a47130eac2f452205ed533cce73a164f9c7140836681d1e"
+  },
+  "config": {
+    "den_min_abs_phi": 1e-14,
+    "den_min_abs_U": 1e-14
+  },
+  "nf": 1,
+  "stats": {
+    "gamma_U_est": {
+      "N": 4000,
+      "min": -6.555485259488084e-16,
+      "max": 1.7174782014999078e-14,
+      "mean": 5.002284721279193e-18,
+      "std": 2.7329323071483736e-16,
+      "p16": 0.0,
+      "p50": -0.0,
+      "p84": 0.0
+    },
+    "gamma_phi_est": {
+      "N": 4000,
+      "min": -1.1791544029857908e-17,
+      "max": 8.408137186367922e-15,
+      "mean": 2.1290977769710492e-18,
+      "std": 1.3293143682537686e-16,
+      "p16": 0.0,
+      "p50": 0.0,
+      "p84": 0.0
+    },
+    "resid_U": {
+      "N": 4000,
+      "min": -1.88079096131566e-37,
+      "max": 3.76158192263132e-37,
+      "mean": 1.88079096131566e-40,
+      "std": 9.402073827500263e-39,
+      "p16": 0.0,
+      "p50": 0.0,
+      "p84": 0.0
+    }
+  }
+}

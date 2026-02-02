@@ -1,0 +1,54 @@
+{
+  "script_version": "v10.5v2-prod",
+  "input_scan": "_GeNeSyS_v10_5v2_background_scan.csv",
+  "input_scan_sha256": "a5c0af9cae759cfa916784fd378766d21ff220f2a57ac37cb42ea927497a54a4",
+  "best_fit_parameters": {
+    "x_c": -8.0,
+    "sigma_c": 0.12,
+    "tau_slow": 6.8,
+    "alpha_M": 0.0015,
+    "H0": 70.0,
+    "tau_fast": 0.7,
+    "f_fast": 0.2,
+    "x_BBN": -17.0,
+    "width_BBN": 0.5
+  },
+  "early_report": {
+    "z_points": [
+      1000000000.0,
+      1100.0,
+      10000.0
+    ],
+    "Omega_em": [
+      -19.686145594264165,
+      -1.6810090510492186,
+      -1.1827615538981406
+    ],
+    "baseline": "E_std^2 = Omega_r0*(1+z)^4 + (Omega_b0+Omega_C0+Omega_M0)*(1+z)^3",
+    "clip": {
+      "z_min": 0.0,
+      "z_max": 485165194.4097903,
+      "clipped": true,
+      "zq_requested": [
+        1000000000.0,
+        1100.0,
+        10000.0
+      ],
+      "zq_used": [
+        485165194.4097903,
+        1099.9999999999998,
+        10000.00000000001
+      ]
+    },
+    "Omega_em_z1e9": -19.686145594264165,
+    "Omega_em_z1100": -1.6810090510492186,
+    "Omega_em_z1e4": -1.1827615538981406
+  },
+  "output_Ez_sha256": "cee4dc3897220e17676a1c1b8232831642ed27e9f500e1f889fd21b68210d32a",
+  "environment": {
+    "python_version": "3.11.0",
+    "numpy_version": "1.24.2+23.gf14cd4457",
+    "pandas_version": "2.0.0rc1+10.geccf9bd802.dirty",
+    "scipy_version": "1.10.2.dev0+2408.7f2ac69"
+  }
+}
