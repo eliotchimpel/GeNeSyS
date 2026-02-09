@@ -1,0 +1,58 @@
+{
+  "model": "GeNeSyS_EB3",
+  "version": "v10.6",
+  "timestamp_unix": 1770622947,
+  "inputs": {
+    "geom_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/geom_output_v10_6_H67_xm2_0_final.npz",
+    "aux_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/aux_output_v10_6_H67_xm2_0_final.npz",
+    "eb2_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb2_output_v10_6_H67_xm2_0_final.npz",
+    "perturbations_json": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/data/genesys_EB3_perturbations.json"
+  },
+  "outputs": {
+    "eb3_out_npz": "/private/var/mobile/Containers/Data/Application/BDD41856-DC2E-4C6B-82D6-30693BD62954/Documents/FINAL/outputs_H67/eb3_output_v10_6_H67_xm2_0_final.npz"
+  },
+  "sha256": {
+    "geom_npz": "ca32fd11ce6d9e0aacf1d6ac8bbcc3f239d0f597e5f406cbccc34406c3bde6dc",
+    "aux_npz": "22e5696172a6e93c1edd1da9f8a234b9530cfd0a3c1d5f61b0995a2db68779f4",
+    "perturbations_json": "c7e7db53a9dff6361002be44ef84a3d77ce825288705be7058fbe78d067af412",
+    "eb3_out_npz": "6e3abc178c43a6a1adf7d62d876c29828c8d5c6585cc8413ce862b382083d9bf",
+    "eb2_npz": "548ba64e3806f116c5a07240a8606fa01d886f72de62e51ef80d90b3fff71913"
+  },
+  "config": {
+    "integrator": "rk4",
+    "ic_mode": "bunch_davies",
+    "save_every": 1,
+    "substeps": 1,
+    "z_min_abs": 1e-14,
+    "err_raise": true,
+    "allow_recompute_z": false
+  },
+  "k_list": [
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "z_source": "geom",
+  "z_ok_frac": 0.9997500624843789,
+  "V_ok_frac": 0.9997500624843789,
+  "start_idx": 0,
+  "fail_frac": 0.0,
+  "stats": {
+    "Pk_R": {
+      "N": 8,
+      "min": 0.012213162151031189,
+      "max": 12618.424418449638,
+      "mean": 1741.0253450751163,
+      "std": 4127.8949815910655,
+      "p16": 2.032508892832749,
+      "p50": 10.743634346939277,
+      "p84": 1028.0254499872624
+    },
+    "finite_frac_Pk_R": 1.0
+  }
+}
